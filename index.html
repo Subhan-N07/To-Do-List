@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <div class="box">
+        
+        <div class="head">
+            
+            <div class="lefthead">
+                <h1 class="lh"> Todo App</h1>
+                <p>Keep it up !</p>
+                <div class="progress">
+                    <div class="progressline"></div>
+                </div>
+            </div>
+            
+            <div class="righthead" id="numbers">0 | 0</div>
+        </div>
+
+        <form class="inputbox">
+            <input type="text" placeholder="Write Your Task..." class="input" id="taskinput"><!--<i class="ri-add-circle-fill"></i>-->
+            <button class="plus" id="newtask">+</button>
+        </form>
+
+        <ul class="listitems." id="tasklist"></ul>
+
+       <!--  <div class="taskitem">
+            <div class="task">
+                <input type="checkbox" name="" id="" class="checkbox" >
+                <p class="p">{task.text}</p>
+
+                <div class="icons">
+                    <img src="edit.png" alt="" class="edit">
+                    <img src="delete.png" alt="" class="edit">
+                </div>
+            </div>
+        </div>-->
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
+
+<!--<div class="icons">
+                <i class="ri-edit-box-fill" onClick="edittask(${index})> </i>
+                <i class="ri-delete-bin-6-line" onClick="deletetask(${index})> </i>
+                </div>-->
